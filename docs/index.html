@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <title>Инвест-Марафон вместе с Альфа-Инвестиции</title>
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon_192.ad539d46.png">
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script type="module" crossorigin src="/assets/index.71ca89e3.js"></script>
+    <link rel="stylesheet" href="/assets/index.01d3f628.css">
+  </head>
+  <body class="desktop bg-fixed">
+    
+    <div id="content" class="container mx-auto px-4 overflow-hidden bg-white">
+      <!-- hero -->
+      <div class="flex flex-col w-full h-screen md:h-auto pb-10">
+        <div class="flex justify-between mt-2">
+          <p class="text-xs uppercase text-alpha font-black leading-tight">Бесплатное<br/>обучение</p>
+          <p class="text-sm text-right leading-tight">старт<br/>15 ноября</p>
+        </div>
+
+        <div class="w-full relative">
+          <img class="w-10/12 mx-auto" src="/assets/hero.9e69c343.png" alt="Invest Marathon"/>
+          <img src="data:image/png;base64,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" width="42" height="42" alt="Sphere" class="absolute left-1/2 top-16 animate-fly" style="margin-left: -120px;">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAQCAYAAADJViUEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAI1SURBVHgBnVO5blpRED3v8cLjgQGxFIAQCJCw27hBVoSUwtDQ0SC+gJ9DTgeKSJQKR5EpgApELBqIWMxi9p3cGeTEIZ2vNG+5d+bMmTNzpePx+A1na7VaYTQaYLfbwWAwwmazQVGUczdIIvh4+jxisVjg5+MjfrXbWC6X2O/3kCRAr1fh9/sRDocFmPZ/8NNTD5VKBdvtFrIsQ6fT8VsS0cSk2+2Kfx1ub2Nwu90cLNPj+XksAqtMkxa9KSvhUmaTyQifzwdNM+DL188Yj0d/Mz88/ECv1+MsRH29XnNWvV7PDDRNg8vlgtViQavVgiz2bm4+QBmNRmKjzU6UaTabCeSxoL8TIul432q1wuFwwOF0wHRxgXq9zn5KqVTC3d0nhEIhXF5dYj6fM/rhcIAkS3in6LHZbDAcDjGZTKCqmhDNgOl0CqVYLKJcLqNWqyGfzzM9RZE5QFVVOJ1O4axiMBig0+lyIAlImihUj8lkgsfj4X6SWP1+Xzh2OBuVQrQDgQCuBLPr6/esgd8fgBIMBvnHIsSgQSAjIGoZGfWb6ms0Ggx6f/9dtMolwEKQ4/E4LoQIVOPLIpHsdjvMZjOfETjtURfI73A4wuv1QiZK6XSa0c8BKJBKIiNGdE5lJBKJ08iSYzKZRLPZRLVaZSdyoCz0TQJRz18sEokglUr9O57knM1mkcvl/qj52igwFoshk8kwk7OLcVptcSkKhQIzoWExGo08A9FolC8GTeHri/ERb1y/AZaJJoW+msVAAAAAAElFTkSuQmCC" width="15" height="16" alt="Sphere" class="absolute right-4 bottom-20 animate-fly animate-delay-600 rounded-full">
+        </div>
+        
+        <img src="/assets/logo.01fa0849.svg" alt="Инвест-Марафон вместе с Альфа-Инвестиции" class="mx-2 mt-1"/>
+
+        <div class="w-full relative mt-4">
+          <a onclick="document.getElementById('form').scrollIntoView({block: 'start', behavior: 'smooth'});" class="cursor-pointer p-4 pb-5 text-sm flex w-full bg-alpha uppercase items-center justify-center font-bold text-white rounded-xl relative z-10">Участвовать бесплатно</a>
+          <div class="absolute w-full h-32 -top-6 z-0 transform scale-75" style="background: radial-gradient(50% 50% at 50% 50%, #EF3124 0%, rgba(255, 255, 255, 0) 100%);"></div>
+          <p class="text-sm relative w-full mt-4">Станьте инвестором с 0 за 1 неделю и&nbsp;начните формировать свой пассивный доход</p>
+        </div>        
+      </div>
+
+      <!-- prizes -->
+      <div class="flex flex-col w-full relative mt-10 pt-20">
+        <img src="/assets/sphere-3.f3411202.png" alt="Sphere" width="19" height="19" class="absolute left-4 top-8 animate-fly rounded-full"/>
+        <img src="/assets/sphere-3.f3411202.png" alt="Sphere" width="11" height="11" class="absolute left-16 top-6 animate-fly animate-delay-300 rounded-full"/>
+        <img src="/assets/sphere-3.f3411202.png" alt="Sphere" width="8" height="8" class="absolute left-8 top-0 animate-fly animate-delay-900 rounded-full"/>
+        <div style="background: conic-gradient(from 180deg at 50% 50%, #CDA761 0deg, rgba(255, 255, 255, 0) 360deg); transform: matrix(-1, 0, 0, 1, 0, 0);" class="absolute w-48 h-48 rounded-full top-8 -right-16"></div>
+        <h2 class="text-2xl relative pr-16">Розыгрыш призов среди тех, кто пополнит брокерский счёт на любую сумму</h2>
+        <img src="/assets/price.2fbbdb1e.svg" alt="30 000 руб." class="w-full mt-6">
+        <p style="font-size: 55px;" class="mt-4 text-3xl text-gold">
+          x10
+        </p>
+        <p class="mt-6 text-md text-gold pr-20 mb-20">10 денежных<br/>призов по 30 000 ₽<br/> на покупку акций</p>
+
+        <img src="/assets/sphere-3.f3411202.png" alt="Sphere" width="32" height="32" class="absolute right-20 bottom-8 animate-fly animate-delay-300 rounded-full"/>
+        <img src="/assets/sphere-3.f3411202.png" alt="Sphere" width="86" height="86" class="absolute right-4 bottom-16 animate-fly animate-slow rounded-full"/>
+        <img src="/assets/sphere-3.f3411202.png" alt="Sphere" width="19" height="19" class="absolute right-10 bottom-2 animate-fly animate-delay-900 rounded-full"/>
+      </div>
+
+      <!-- slider -->
+      <div class="relative flex flex-col -mx-4 px-4 pt-32 bg-alpha -mt-1">
+        <div style="height: 234px; background: linear-gradient(0deg, #EF3124 0%, rgb(255, 255, 255) 100%);" class="absolute w-full left-0 -top-1"></div>
+        <h3 class="text-3xl uppercase font-medium relative text-white">Этот<br/>марафон<br/>для вас</h3>
+
+        <div class="swiper -mx-4 px-4 mt-5 pb-12 mb-10" style="height: 508px">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide overflow-hidden bg-white rounded-xl px-3 py-5 relative">
+              <img src="/assets/1.c6370ab2.png" alt="Slide 1" class="absolute right-4 top-24" width="215" height="239"/>
+              <p class="text-sm text-alpha relative">01</p>
+              <h3 class="text-2xl mt-4 leading-none relative">Если вы<br/> хотите начать инвестировать<br/> с нуля</h3>
+              <p class="absolute text bottom-4">Разберётесь <br/>в теме инвестиций <br/>и сможете открыть <br/>свой брокерский счёт</p>
+            </div>
+            <div class="swiper-slide overflow-hidden bg-white rounded-xl px-3 py-5 relative">
+              <img src="/assets/2.d4e5f03e.png" alt="Slide 1" class="absolute left-4 top-40" width="238" height="209"/>
+              <p class="text-sm text-alpha relative">02</p>
+              <h3 class="text-2xl mt-4 leading-none relative">Если вы хотите <br/>избавиться от <br/>кредитов и выйти <br/>из долговой ямы</h3>
+              <p class="absolute text bottom-4">Сформируете себе <br/>подушку безопасности</p>
+            </div>
+            <div class="swiper-slide overflow-hidden bg-white rounded-xl px-3 py-5 relative">
+              <img src="/assets/3.7e92329f.png" alt="Slide 3" class="absolute left-0 top-1" width="281" height="439"/>
+              <p class="text-sm text-alpha relative">03</p>
+              <h3 class="text-2xl mt-4 leading-none relative">Если вы хотите<br/>открыть новый<br/>способ заработка</h3>
+              <p class="absolute text bottom-4">Откроете <br/>для себя пассивный способ <br/> заработка, совмещая <br/>с работой в найме</p>
+            </div>
+            <div class="swiper-slide overflow-hidden bg-white rounded-xl px-3 py-5 relative">
+              <img src="/assets/4.76f31961.png" alt="Slide 4" class="absolute left-0 top-8" width="281" height="377"/>
+              <p class="text-sm text-alpha relative">04</p>
+              <h3 class="text-2xl mt-4 leading-none relative">Если вы уже <br/>инвестируете</h3>
+              <p class="absolute text bottom-4">Узнаете, как приумножить <br/>существующий капитал</p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        
+          <!-- <div class="swiper-button-prev"></div> -->
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+
+      <!-- program -->
+      <div class="relative flex flex-col bg-alpha -mx-4 px-4 pt-10 pb-10 -mt-1">
+        <div style="background: linear-gradient(180deg, #EF3124 0%, rgb(0, 0, 0) 100%);" class="absolute w-full h-1/2 left-0 bottom-0"></div>
+        <img width="237" height="129" src="/assets/program.c2cafac6.png" alt="Program Image" class="relative mx-auto">
+        <img src="/assets/program-title.a560b08c.svg" alt="Программа" class="relative w-full mt-8"/>
+        <div class="flex flex-col bg-white rounded-xl relative mt-4">
+          <h3 class="uppercase text-2xl leading-none pt-7 px-4 mb-6">
+            <span class="text-alpha">1 неделя,</span><br/>
+            чтобы стать<br/>
+            инвестором<br/>
+            с нуля
+          </h3>
+
+          <div class="flex flex-col border-t border-black px-4 py-6">
+            <div class="flex">
+              <p class="text-alpha text-sm w-10 flex-shrink-0">№1</p>
+              <p class="text-sm">Маршрутная карта: что мы будем делать и какой результат вас ждёт <span class="text-alpha">+</span> инструкция «Как открыть брокерский счёт в Альфа-Инвестиции»</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col border-t border-black px-4 py-6">
+            <div class="flex">
+              <p class="text-alpha text-sm w-10 flex-shrink-0">№2</p>
+              <p class="text-sm">Формула богатства: учёт расходов и доходов</p>
+            </div>
+            <div class="flex mt-4">
+              <p class="text-alpha text-sm w-10 flex-shrink-0 mt-5">+</p>
+              <p class="text-sm">
+                <span class="text-alpha">Бонус:</span><br/>
+                Таблица учёта доходов и расходов</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col border-t border-black px-4 py-6">
+            <div class="flex">
+              <p class="text-alpha text-sm w-10 flex-shrink-0">№3</p>
+              <p class="text-sm">Как найти деньги на инвестиции</p>
+            </div>
+            <div class="flex mt-4">
+              <p class="text-alpha text-sm w-10 flex-shrink-0 mt-5">+</p>
+              <p class="text-sm">
+                <span class="text-alpha">Бонус:</span><br/>
+                Правило 4 конвертов</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col border-t border-black px-4 py-6">
+            <div class="flex">
+              <p class="text-alpha text-sm w-10 flex-shrink-0">№4</p>
+              <p class="text-sm">Определение стратегии инвестирования</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col border-t border-black px-4 py-6">
+            <div class="flex">
+              <p class="text-alpha text-sm w-10 flex-shrink-0">№5</p>
+              <p class="text-sm">Куда не надо инвестировать</p>
+            </div>
+            <div class="flex mt-4">
+              <p class="text-alpha text-sm w-10 flex-shrink-0 mt-5">+</p>
+              <p class="text-sm">
+                <span class="text-alpha">Бонус:</span><br/>
+                Признаки финансовых пирамид</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col border-t border-black px-4 py-6">
+            <div class="flex">
+              <p class="text-alpha text-sm w-10 flex-shrink-0">№6</p>
+              <p class="text-sm">Акции,<br/> облигации</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col border-t border-black px-4 py-6">
+            <div class="flex">
+              <p class="text-alpha text-sm w-10 flex-shrink-0">№7</p>
+              <p class="text-sm">Как купить акции, облигации. Биржи</p>
+            </div>
+            <div class="flex mt-4">
+              <p class="w-10 flex-shrink-0"></p>
+              <p class="text-sm text-alpha">Бонусы:</p>
+            </div>
+            <div class="flex">
+              <p class="text-alpha text-sm w-10 flex-shrink-0">+</p>
+              <p class="text-sm">Ссылки на Спб и Мск биржи</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col border-t border-black px-4 py-6">
+            <div class="flex">
+              <p class="text-alpha text-sm w-10 flex-shrink-0">№8</p>
+              <p class="text-sm">Как сформировать свой инвестпортфель</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col border-t border-black px-4 py-6">
+            <div class="flex">
+              <p class="text-alpha text-sm w-10 flex-shrink-0">№9</p>
+              <p class="text-sm">Диверсификация. ETF</p>
+            </div>
+            <div class="flex mt-4">
+              <p class="w-10 flex-shrink-0"></p>
+              <p class="text-sm text-alpha">Бонус:</p>
+            </div>
+            <div class="flex">
+              <p class="text-alpha text-sm w-10 flex-shrink-0">+</p>
+              <p class="text-sm">Где искать ETF</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col border-t border-black px-4 py-6">
+            <div class="flex">
+              <p class="text-alpha text-sm w-10 flex-shrink-0">№10</p>
+              <p class="text-sm">Стратегия инвестирования: как часто покупать и продавать на бирже</p>
+            </div>
+            <div class="flex mt-4">
+              <p class="w-10 flex-shrink-0"></p>
+              <p class="text-sm text-alpha">Бонусы:</p>
+            </div>
+            <div class="flex">
+              <p class="text-alpha text-sm w-10 flex-shrink-0">+</p>
+              <p class="text-sm">Тест на риск-профиль от Альфа-Инвестиции</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col border-t border-black px-4 py-6">
+            <div class="flex">
+              <p class="text-alpha text-sm w-10 flex-shrink-0">№11</p>
+              <p class="text-sm">ИИС. Как получить налоговый вычет</p>
+            </div>
+            <div class="flex mt-4">
+              <p class="w-10 flex-shrink-0"></p>
+              <p class="text-sm text-alpha">Бонусы:</p>
+            </div>
+            <div class="flex">
+              <p class="text-alpha text-sm w-10 flex-shrink-0">+</p>
+              <p class="text-sm">Ссылка на открытие ИИС в Альфа-Инвестиции</p>
+            </div>
+            <div class="flex mt-4">
+              <p class="text-alpha text-sm w-10 flex-shrink-0">+</p>
+              <p class="text-sm">Список документов, которые можно получить для открытия ИИС</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col border-t border-black px-4 py-6">
+            <div class="flex">
+              <p class="text-alpha text-sm w-10 flex-shrink-0">№12</p>
+              <p class="text-sm">Как и когда оценивать результат. Цели инвестиций</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col border-t border-black px-4 py-6 pb-8">
+            <div class="flex">
+              <p class="text-alpha text-sm w-10 flex-shrink-0">№13</p>
+              <p class="text-sm">Как создать подушку безопасности</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- streams -->
+      <div class="relative flex flex-col bg-black -mx-4 px-4 pt-48 -mt-1">
+        <img src="/assets/3d-image.d4313a93.png" alt="3" width="254" height="221" class="absolute left-0 top-0"/>
+        <h3 class="text-light-gold uppercase leading-none text-2xl mt-2"><span class="sr-only">3</span> дополнительных прямых эфира с&nbsp;ответами на&nbsp;ваши вопросы</h3>
+
+        <div class="flex items-center mt-7">
+          <img src="/assets/gold-arrow.cffcc87a.png" alt="gold arrow icon" width="59" height="36" class="mr-4 -ml-4 animate-arrow"/>
+          <p class="text-sm text-white">Принципы финансовой свободы. Как начать инвестировать?</p>
+        </div>
+        <div class="flex items-center mt-4">
+          <img src="/assets/gold-arrow.cffcc87a.png" alt="gold arrow icon" width="59" height="36" class="mr-4 -ml-4 animate-arrow animate-delay-300"/>
+          <p class="text-sm text-white">Как создать состояние в&nbsp;кризис? Как избавиться от&nbsp;долгов за короткий срок?</p>
+        </div>
+        <div class="flex items-center mt-4">
+          <img src="/assets/gold-arrow.cffcc87a.png" alt="gold arrow icon" width="59" height="36" class="mr-4 -ml-4 animate-arrow animate-delay-600"/>
+          <p class="text-sm text-white">Обзор возможностей заработка на инвестициях</p>
+        </div>
+        <img src="/assets/artyom.cea56b6d.jpg" alt="Artyom photo" style="width: calc(100% + 2rem);" class="-mx-4 max-w-none h-auto">
+      </div>
+
+      <!-- result -->
+      <div class="flex flex-col bg-black -mx-4 px-4 pt-1 -mt-1">
+        <img width="260" src="/assets/result-after-a-week.ce53854c.svg" alt="Результат после недели обучения"/>
+        <h3 class="sr-only">Результат после недели обучения</h3>
+        <div class="flex mt-8 items-start">
+          <img src="data:image/png;base64,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" width="14" height="14" class="rounded-full flex-shrink-0 mr-5 mt-1 animate-shadow" alt="dot icon"/>
+          <p class="text-sm text-white">Откроете брокерский счёт в&nbsp;Альфа-Инвестиции</p>
+        </div>
+        <div class="flex mt-8 items-start">
+          <img src="data:image/png;base64,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" width="14" height="14" class="rounded-full flex-shrink-0 mr-5 mt-1 animate-shadow animate-delay-300" alt="dot icon"/>
+          <p class="text-sm text-white">Начнёте вести учёт доходов&nbsp;и&nbsp;расходов</p>
+        </div>
+        <div class="flex mt-8 items-start">
+          <img src="data:image/png;base64,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" width="14" height="14" class="rounded-full flex-shrink-0 mr-5 mt-1 animate-shadow animate-delay-600" alt="dot icon"/>
+          <p class="text-sm text-white">Купите свои первые акции, облигации, ETF под нашим руководством</p>
+        </div>
+        <div class="flex mt-8 items-start">
+          <img src="data:image/png;base64,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" width="14" height="14" class="rounded-full flex-shrink-0 mr-5 mt-1 animate-shadow animate-delay-900" alt="dot icon"/>
+          <p class="text-sm text-white">Создадите свой инвестпортфель и определите дальнейшую стратегию инвестирования</p>
+        </div>
+        <div class="flex mt-8 items-start">
+          <img src="data:image/png;base64,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" width="14" height="14" class="rounded-full flex-shrink-0 mr-5 mt-1 animate-shadow animate-delay-1200" alt="dot icon"/>
+          <p class="text-sm text-white">Станете начинающим инвестором</p>
+        </div>
+
+        <div class="w-full relative mt-10">
+          <a onclick="document.getElementById('form').scrollIntoView({block: 'start', behavior: 'smooth'});" class="cursor-pointer p-4 pb-5 text-sm flex w-full bg-alpha uppercase items-center justify-center font-bold text-white rounded-xl relative z-10 mb-10">Хочу на марафон</a>
+          <div class="absolute w-full h-32 -top-6 z-0 transform scale-75" style="background: radial-gradient(50% 50% at 50% 50%, #EF3124 0%, rgba(255, 255, 255, 0) 100%);"></div>
+        </div> 
+      </div>
+
+      <!-- points -->
+      <div class="flex flex-col bg-black -mx-4 px-4 pt-1 -mt-1">
+        <h3 class="text-2xl uppercase leading-none text-white">Инвестиционный марафон — это:</h3>
+        <div style="height: 140px" class="relative p-4 w-full rounded-xl bg-white mt-6 flex items-end">
+          <p class="uppercase text-md leading-tight">Короткие <br/>видеоуроки</p>
+          <img src="/assets/1.cda815c7.png" alt="Point Icon" class="absolute right-5 top-15" width="88" height="107" />
+        </div>
+        <div style="height: 140px" class="relative p-4 w-full rounded-xl bg-white mt-1 flex items-end">
+          <p class="uppercase text-md leading-tight">Открытый<br/> брокерский счёт<br/> в Альфа-Инвестиции</p>
+          <img src="/assets/2.68a285b4.png" alt="Point Icon" class="absolute right-3 top-4" width="107" height="88" />
+        </div>
+        <div style="height: 140px" class="relative p-4 w-full rounded-xl bg-white mt-1 flex items-end">
+          <p class="uppercase text-md leading-tight">Уроки в нашем <br/> телеграм-канале</p>
+          <img src="/assets/3.4eb75e26.png" alt="Point Icon" class="absolute right-3 top-5" width="103" height="94" />
+        </div>
+        <div style="height: 140px" class="relative p-4 w-full rounded-xl bg-white mt-1 flex items-end">
+          <p class="uppercase text-md leading-tight">Крутые <br/>бонусы</p>
+          <img src="/assets/4.9747e6ba.png" alt="Point Icon" class="absolute right-5 top-2" width="131" height="126" />
+        </div>
+        <div style="height: 140px" class="relative p-4 w-full rounded-xl bg-white mt-1 flex items-end overflow-hidden">
+          <p class="uppercase text-md leading-tight">Прямые <br/>эфиры</p>
+          <img src="/assets/5.baa5ba39.png" alt="Point Icon" class="absolute right-0 top-1" width="210" height="128" />
+        </div>
+        <div style="height: 140px;" class="bg-point-6 bg-cover relative p-4 w-full rounded-xl bg-white mt-1 flex items-end z-10">
+          <p class="uppercase text-md leading-tight">Розыгрыш 10<br/>призов по 30 000 ₽<br/> среди участников</p>
+          <img src="/assets/sphere-3.f3411202.png" alt="Sphere" width="33" height="33" class="absolute right-12 top-10 animate-fly animate-slow rounded-full"/>
+          <img src="/assets/sphere-3.f3411202.png" alt="Sphere" width="14" height="14" class="absolute right-5 top-10 animate-fly animate-delay-300 rounded-full"/>
+          <img src="/assets/sphere-3.f3411202.png" alt="Sphere" width="10" height="10" class="absolute right-10 top-5 animate-fly animate-delay-900 rounded-full"/>
+          
+          <img src="/assets/blur-gold.c67b8dd8.png" alt="Sphere" width="83" height="123" class="absolute -right-4 top-1/2 animate-fly animate-delay-300 animate-slow"/>
+        </div>
+        <div class="relative w-full h-32 -mt-20 transform scale-75 z-0" style="background: radial-gradient(50% 50% at 50% 50%, #FFD58B 0%, rgba(7, 7, 6, 0) 100%);"></div>
+      </div>
+
+      <!-- money -->
+      <div class="relative flex flex-col bg-black -mx-4 px-4 pt-1 -mt-1 pb-1">
+        <img src="/assets/money.5f664524.jpg" alt="Money photo" style="width: calc(100% + 2rem);" class="-mx-4 max-w-none h-auto"/>
+        <div class="w-full absolute h-1/2 bottom-0 left-0" style="background: linear-gradient(0deg, #EF3124 0%, #EF3124 40%, rgba(239, 49, 36, 0) 100%);"></div>
+        <div class="w-full absolute bottom-1 px-10 -mx-4">
+          <img src="/assets/ler_and_artem.ae601e2a.svg" alt="Валерия и Артем Чекалины" class="w-full"/>
+        </div>
+        <a href="https://instagram.com/ler_chek" target="_blank" class="text-white text-sm bg-black p-1 absolute transform -rotate-90 -left-8 top-1/2">@ler_chek</a>
+        <a href="https://instagram.com/artem_chek" target="_blank" class="text-white text-sm bg-black p-1 absolute transform rotate-90 -right-10 top-1/2">@artem_chek</a>
+      </div>
+
+      <!-- form-heading -->
+      <div class="relative flex flex-col bg-alpha -mx-4 px-4 pt-5 pb-10 -mt-1">
+        <p class="text-sm text-white text-center mb-20">Участвуйте бесплатно сейчас<br/>и начните инвестировать<br/>уже через 1 неделю!</p>
+        <h3 class="text-2xl text-white">Регистрируйтесь<br/> и переходите<br/> в телеграм<br/> -канал</h3>
+        <img src="/assets/tg-channel.cf51ee45.png" width="158" height="188" alt="Tg channel icon" class="absolute bottom-6 right-0">
+      </div>
+
+      <!-- form -->
+      <form id="form" style="background: linear-gradient(180deg, #EF3124 0%, #FBD0CD 100%);" class="relative flex flex-col bg-alpha -mx-4 px-4 -mt-1 pt-1 pb-8">
+        <input required name="phone" type="text" placeholder="+_ ___ ___ __ __" class="w-full mb-1 rounded-xl text px-10 py-4"/>
+        <input required name="email" type="email" placeholder="Ваш @e-mail" class="w-full mb-3 rounded-xl text px-10 py-4"/>
+        <button type="submit" id="submit" class="w-full uppercase font-bold text-center text-white text-sm bg-black p-4 rounded-xl">Зарегистрироваться</button>
+        <button disabled id="loader" class="hidden w-full pointer-events-none uppercase font-bold text-center text-white text-sm bg-black p-4 rounded-xl">
+          <div style="border-top: 2px solid transparent;" class="w-4 h-4 animate-spin border-2 border-white rounded-full mx-auto"></div>
+        </button>
+        <div class="flex mt-3 mb-24">
+          <img src="/assets/safe.938da072.svg" class="w-3 h-3 mr-2 flex-shrink-0" alt="safe icon"/>
+          <p class="text-xs text-white">Нажимая кнопку «Зарегистрироваться», я соглашаюсь на обработку моих персональных данных в соответствии с&nbsp;Условиями конфиденциальности</p>
+        </div>
+        <p class=" text-xs text-white mb-4 md:hidden">Техподдержка <a href="https://t.me/alfainvest_support_bot" target="_blank" class="underline">@alfainvest_support_bot</a></p>
+        <a href="/policy" target="_blank" class="text-xs text-white underline md:hidden">Политика конфиденциальности</a>
+      </form>
+    </div>
+
+    <p class="hidden text-xs mb-4 md:inline md:fixed md:left-4 md:bottom-0 text-black">Техподдержка <a href="https://t.me/alfainvest_support_bot" target="_blank" class="underline">@alfainvest_support_bot</a></p>
+    <a href="/policy" target="_blank" class="hidden text-xs underline md:inline md:fixed md:right-4 md:bottom-4 text-black">Политика конфиденциальности</a>
+
+    <!-- finish -->
+    <div id="finish" class="hidden">
+      <div class="flex flex-col w-full">
+        <img src="/assets/all-done.ffc5223a.svg" class="mx-6 mt-6"/>
+        <img src="/assets/finish-photo.6435e906.png" class="w-full mt-6 relative z-10"/>
+        <div class="w-full relative">
+          <a id="result_link" href="#" target="_blank" class="cursor-pointer p-4 pb-5 text-sm flex w-full bg-alpha uppercase items-center justify-center font-bold text-white rounded-xl relative z-10">
+            Перейти в канал
+            <img src="/assets/telegram.9384f9f6.svg" class="w-24 absolute -right-2 -bottom-8"/>
+          </a>
+          <div class="absolute w-full h-32 -top-6 z-0 transform scale-150" style="background: radial-gradient(50% 50% at 50% 50%, #FFD58B 0%, rgba(255, 255, 255, 0) 100%);"></div>
+        </div>
+        <p class="text-sm mt-4 relative">Обязательно подпишитесь<br/>на&nbsp;телеграм-канал для участников — там будут самые важные новости и ссылки на просмотр уроков.</p>
+        <p class="text-xs mt-10 md:hidden">Если у вас возникли сложности с регистрацией - напишите в техподдержку <a href="https://t.me/alfainvest_support_bot" target="_blank" class="underline">@alfainvest_support_bot</a></p>
+        <a href="/policy" target="_blank" class="text-xs underline my-6 md:hidden">Политика конфиденциальности</a>
+      </div>
+    </div>
+
+    
+  </body>
+</html>
